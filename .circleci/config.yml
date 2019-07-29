@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Deploy to EB if branch is Master
           command: |
-            eb use circleci-beanstalk-example-dev  --region us-west-2 --profile eb-cli
+            eb use CircleciBeanstalkExample-env  --region us-west-2 --profile eb-cli
             eb deploy -v --staged --profile eb-cli --region us-west-2
  
 workflows:
